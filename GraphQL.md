@@ -1,6 +1,6 @@
 # GraphQL  
 
-## Phirosophy  
+## Phyrosophy  
 GraphQl is new way of integration  
 (now, the most prevalent way is REST)  
 Both of them integrate application and web  
@@ -62,4 +62,25 @@ The servers response would be about the following JSON-object
 }
 
 ```
-### schema  
+### schema<heart of GraphQL>  
+Describing the data sent between the client and the server.  
+  ```
+  type Person {
+  name: String!
+  phone: String
+  street: String!
+  city: String!
+  id: ID! 
+}
+
+type Query {
+  personCount: Int!
+  allPersons: [Person!]!
+  findPerson(name: String!): Person
+}
+```  
+As you see, Person have five fields.  
+Four of them have String(one of scalar types of GraphQL)  
+*(!)must be given the value/Non-null  
+
+
