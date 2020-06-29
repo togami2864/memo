@@ -6,7 +6,7 @@ GraphQl is new way of integration
 Both of them integrate application and web  
 
 ### query  
-Query is describing the data wanted(with HTTP POST request) ------> API  
+Query is describing the data wanted(with HTTP POST request) ---(send)---> API  
 Unlike REST, all GraphQL queries are sent to the same address, and their type is POST.  
 
 ```
